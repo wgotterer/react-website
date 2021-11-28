@@ -32,8 +32,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
               main: '#ebf8e1',
             }
         }
-       
       });
+
     return (
         <div className="home_container">
         <ThemeProvider theme={theme}>

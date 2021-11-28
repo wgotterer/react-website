@@ -23,6 +23,7 @@ code {
 .navigation{
   background: #ebf8e1;
   width: 100%; 
+ 
 }
 
 .home_text_container{
@@ -30,3 +31,31 @@ code {
   top: 200px;
   left: 200px;
 }
+
+.about_container{
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #daac7b);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.about_text_container{
+  line-break: auto;
+  position: relative;
+  top: 150px;
+  left: 10px;
+}
+
+.about_pic{
+  position: relative;
+  top: 100px;
+  left: 550px;
+  border-radius: 25px;
+  
+}
+
+.card_container{
+  
+
+    }

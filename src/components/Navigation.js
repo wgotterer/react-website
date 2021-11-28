@@ -25,7 +25,7 @@ function Navigation(){
   return (
     <div className='navigation'>
       <ThemeProvider theme={theme}>
-        <ButtonGroup variant="contained" color="primary" size="large" background>
+        <ButtonGroup variant="contained" color="primary" size="large">
         <Button  startIcon={<HomeIcon/>}>
         <NavLink to='/'>Home</NavLink>
         </Button >
