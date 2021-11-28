@@ -17,9 +17,16 @@ code {
   position: absolute;
   height: 100%;
   width: 100%;
+  
 }
 
 .navigation{
   background: #ebf8e1;
   width: 100%; 
+}
+
+.home_text_container{
+  position: relative;
+  top: 200px;
+  left: 200px;
 }

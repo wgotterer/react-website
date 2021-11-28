@@ -25,12 +25,19 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
                 
                 marginBottom: 30,
             }
+        },
+        palette: {
+            primary: {
+              // Purple and green play nicely together.
+              main: '#ebf8e1',
+            }
         }
        
       });
     return (
-        <ThemeProvider theme={theme}>
         <div className="home_container">
+        <ThemeProvider theme={theme}>
+        <div className="home_text_container">
         <Typography variant="h4">
             Hi, I'm William.
         </Typography>
@@ -45,6 +52,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         </Button>
         </div>
         </ThemeProvider>
+        </div>
     )
 }
 
