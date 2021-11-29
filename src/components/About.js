@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Button from '@mui/material/Button';
 import '@fontsource/roboto';
 import Typography from '@mui/material/Typography';
@@ -8,6 +8,7 @@ import websitephoto from "./websitephoto.jpg";
 
 
  function About() {
+     const [aboutPhoto, setAboutPhoto] = useState(websitephoto)
     let history = useHistory()
 
     function handleLearnMore(){
@@ -35,7 +36,7 @@ import websitephoto from "./websitephoto.jpg";
       });
 
 
-    return (
+    return aboutPhoto ? (
         <div className="about_container">
         <ThemeProvider theme={theme}>
         <div className="about_text_container">
@@ -64,6 +65,7 @@ import websitephoto from "./websitephoto.jpg";
         <img className="about_pic" src={websitephoto} alt="Logo" height="300" width="200" />
         </div>
     )
+    : "Loading"
 }
 
 export default About

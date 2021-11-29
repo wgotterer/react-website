@@ -51,7 +51,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         Learn More
         </Button>
         <Typography variant="h2">
-        <img height="50" width="50" src="https://cdn.iconscout.com/icon/free/png-256/linkedin-3691226-3073746.png"/>
+        <img height="50" width="50" alt="linkedin" src="https://cdn.iconscout.com/icon/free/png-256/linkedin-3691226-3073746.png"/>
         </Typography>
         </div>
         </ThemeProvider>
