@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Button from '@mui/material/Button';
 import '@fontsource/roboto';
 import Typography from '@mui/material/Typography';
@@ -9,6 +9,11 @@ import websitephoto from "./websitephoto.jpg";
 
  function About() {
      const [aboutPhoto, setAboutPhoto] = useState(websitephoto)
+
+     useEffect(() => {
+        setAboutPhoto(websitephoto)
+     }, [])
+
     let history = useHistory()
 
     function handleLearnMore(){
