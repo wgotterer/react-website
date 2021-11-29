@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import '@fontsource/roboto';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {Grid} from 'semantic-ui-react'
+
 
 
  function Work() {

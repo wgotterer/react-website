@@ -12,7 +12,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
     let history = useHistory();
 
     function handleLearnMore(){
-        {history.push("/about")}
+        history.push("/about")
     }
 
     const theme = createTheme({

@@ -11,7 +11,7 @@ import websitephoto from "./websitephoto.jpg";
     let history = useHistory()
 
     function handleLearnMore(){
-        {history.push("/work")}
+        history.push("/work")
     }
 
 
