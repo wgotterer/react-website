@@ -55,7 +55,28 @@ code {
   
 }
 
-.card_container{
-  
+.grid_container{
+  display: grid;
+  grid-gap: 1em;
+  /* grid-template-columns: auto auto auto auto auto;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  left: 240px; */
+}
 
-    }
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.work_container{
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #daac7b);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+}
