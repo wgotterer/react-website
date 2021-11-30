@@ -47,7 +47,7 @@ import websitephoto from "./websitephoto.jpg";
         <div className="about_text_container">
         <Typography variant="h4">
         Originally from a small town in Massachusetts, I have shaped my life to be able to move around  and continuously learn from people throughout the world. For over five years I taught English and piano in Italy and Spain. 
-        My passion for programming arose during the lockdown after discovering some free online courses. I quickly realized how familiar coding seemed. It’s a very similar process to learning Italian and Spain. Subsequently I took a full-stack software engineering bootcamp at The Flatiron school.
+        My passion for programming arose during the lockdown after discovering some free online courses. I quickly realized how familiar coding seemed. It’s a very similar process to learning Italian and Spanish. Subsequently I took a full-stack software engineering bootcamp at The Flatiron school.
         With the skills I have harnessed over the years, I wish to use them to build connections, learn, and create for a better future.         </Typography>
         <Button onClick={handleLearnMore}  variant="contained" color="primary">
         See My Work
