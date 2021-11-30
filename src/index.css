@@ -49,13 +49,10 @@ body {
   left: 10px;
 } */
 
-/* .about_pic{
-  position: relative;
-  top: 100px;
-  left: 550px;
+.about_pic{
   border-radius: 25px;
   
-} */
+}
 
 .grid_container{
   display: grid;
@@ -63,6 +60,8 @@ body {
   grid-template-rows: auto auto;
   grid-gap: 80px;
   justify-content: center;
+  padding-left: 50px;
+    padding-right: 50px;
 }
 
 .grid-item {
