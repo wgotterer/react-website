@@ -55,7 +55,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
             Hi, I'm William.
         </Typography>
         <Typography variant="h2">
-        Software Engineer. Teacher. Musician
+        Software Engineer. Teacher. Musician.
         </Typography>
         <Typography variant="h4">
         Full Stack Software Engineer with a passion for creating to make the world a better place.

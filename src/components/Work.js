@@ -56,45 +56,50 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         
         <div className="work_container">
          <div className="grid_container">
-        {/* <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h4">
-            My Work Thus Far!
-        </Typography>
-        </ThemeProvider> */}
-     </div>
-     <div className="grid_container">
         <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h4">
-            Monster Code!
-           <br /> <Button onClick={handleMonster}  target="_blank" variant="contained" color="primary">
-        Monster Code
-        </Button>
-        </Typography>
-        <Typography className="grid_item" variant="h4">
-            Creating Tables in Ruby!
-            <br /> <Button onClick={handleTable}  target="_blank" variant="contained" color="primary">
-        Tables Blog
-        </Button>
+        <Typography className="grid_item" variant="h3">
+             Blogs!
         </Typography>
         </ThemeProvider>
-     </div>
-     <div className="grid_container">
         <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h4">
-        Spice it Up! A recipe app
-           <br /> <Button onClick={handleSpice}  target="_blank" variant="contained" color="primary">
-        Spice it Up!
-        </Button>
+        <Typography className="grid_item" variant="h3">
+        Projects!
         </Typography>
+        </ThemeProvider>
+     
+     {/* <div className="grid_container"> */}
+        <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
         map() in JS
            <br /> <Button onClick={handleMap}  target="_blank" variant="contained" color="primary">
         map()
         </Button>
         </Typography>
+        <Typography className="grid_item" variant="h4">
+        Spice it Up! A recipe app
+           <br /> <Button onClick={handleSpice}  target="_blank" variant="contained" color="primary">
+        Spice it Up!
+        </Button>
+        </Typography>
         </ThemeProvider>
-     </div>
-     <div className="grid_container">
+     {/* </div> */}
+     {/* <div className="grid_container"> */}
+        <ThemeProvider theme={theme}>
+        <Typography className="grid_item" variant="h4">
+        Creating Tables in Ruby!
+            <br /> <Button onClick={handleTable}  target="_blank" variant="contained" color="primary">
+        Tables Blog
+        </Button>
+        </Typography>
+        <Typography className="grid_item" variant="h4">
+        Monster Code!
+           <br /> <Button onClick={handleMonster}  target="_blank" variant="contained" color="primary">
+        Monster Code
+        </Button>
+        </Typography>
+        </ThemeProvider>
+     {/* </div> */}
+     {/* <div className="grid_container"> */}
         <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
         Passing props in React
@@ -103,6 +108,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         </Button>
         </Typography>
         </ThemeProvider>
+     {/* </div> */}
      </div>
      </div>
     )
