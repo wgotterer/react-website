@@ -59,10 +59,10 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         <img onClick={handleLinkedin} height="50" width="50" alt="linkedin" src="https://cdn.iconscout.com/icon/free/png-256/linkedin-3691226-3073746.png"/>
         </Typography>
         <Typography className="home_button" variant="h2">
-        <img onClick={handleDev} height="50" width="50" alt="Git Hub" src="https://newsignature.com/wp-content/uploads/2020/08/github-logo-tile.png"/>
+        <img onClick={handleDev} height="50" width="50" alt="Git Hub" src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" />
         </Typography>
         <Typography className="home_button" variant="h2">
-        <img onClick={handleGit} height="50" width="50" alt="Dev" src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png"/>
+        <img onClick={handleGit} height="50" width="50" alt="Dev" src="https://newsignature.com/wp-content/uploads/2020/08/github-logo-tile.png" />
         </Typography>
         </div>
         <ThemeProvider theme={theme}>
