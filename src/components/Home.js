@@ -65,7 +65,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         </Button>
         <Typography className="home_button" variant="h2">
         <a class="mailto" href="mailto:william.gotterer@gmail.com">
-        <img height="50" width="50" alt="mail" src="https://i.pinimg.com/originals/ca/27/f6/ca27f615c790f1af43f2dd564599bf6a.jpg"/>
+        <img height="50" width="50" alt="mail" src="https://seeklogo.com/images/G/gmail-icon-logo-9ADB17D3F3-seeklogo.com.png"/>
         </a>
         </Typography>
         <Typography className="home_button" variant="h2">
