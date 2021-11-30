@@ -82,11 +82,8 @@ body {
 
 .home_button{
   display:inline-block;
-  /* position: relative;
-  left: 680px;
-  top: 20px;
-  padding: 10px;
-  cursor: pointer;  */
+  margin: 20px !important;
+  cursor: pointer; 
 }
 
 .home_button:hover { transform: scale(1.1); }
@@ -98,4 +95,3 @@ body {
   width: 100%;
   
 }
-
