@@ -48,9 +48,8 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
       });
 
     return (
-        <div className="home_container">
-       
-        <ThemeProvider theme={theme}>
+        // <div className="home_container">
+        <>
         <div className="home_text_container">
         <Typography variant="h4">
             Hi, I'm William.
@@ -82,8 +81,9 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         </div>
         </div>
         
-        </ThemeProvider>
-        </div>
+        </>
+        // </div>
+        
     )
 }
 
