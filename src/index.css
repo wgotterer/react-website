@@ -27,16 +27,15 @@ body {
 }
 
 .home_text_container{
-  position: relative;
-  top: 200px;
-  padding-left: 200px;
+ text-align: center;
+ padding-top: 200px;
 }
 
 .about_container{
   display: grid;
   grid-template-columns: auto auto;
   text-align: justify;
-  margin-top: 50px;
+  margin-top: 150px;
   grid-gap: 60px;
   padding: 0 30px;
   
