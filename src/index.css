@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(
-0.25turn, #DDC5C7, #FFEBE5, #B6A1AD);
+0.7turn, #DDC5C7, #FFEBE5, #B6A1AD);
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -72,7 +72,7 @@ body {
 }
 
 .work_container{
-  background: linear-gradient(0.25turn, #DDC5C7, #FFEBE5, #B6A1AD);
+  background: linear-gradient(0.7turn, #DDC5C7, #FFEBE5, #B6A1AD);
   position: absolute;
   height: 100%;
   width: 100%;
