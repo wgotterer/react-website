@@ -89,7 +89,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
      {/* <div className="grid_container"> */}
         <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
-        This blog aims to help a beginner Rubyist take the first steps in creating tables, using Active Record, SQL, and Sinatra, rake commands, and ultimately have a solid platform to take the nexts steps in building an API. 
+        This blog aims to help a beginner Rubyist take the first steps in creating tables, using Active Record, SQL, and Sinatra, rake commands, and ultimately have a solid platform to take the next steps in building an API. 
             <br /> <Button onClick={handleTable}  target="_blank" variant="contained" color="primary">
         Read More
         </Button>
