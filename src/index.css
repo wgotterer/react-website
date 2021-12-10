@@ -57,8 +57,8 @@ body {
 
 .grid_container{
   display: grid;
-  grid-template-columns: repeat(1, auto);
-  grid-template-rows: repeat(1, auto);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
   grid-gap: 80px;
   justify-content: center;
   padding-left: 50px;
@@ -86,7 +86,7 @@ body {
   padding-top: 100px;
 }
 
-.video-responsive {
+/* .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
@@ -99,7 +99,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-}
+} */
 
 .description{
   padding-top: 20px;
