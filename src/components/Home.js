@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import '@fontsource/roboto';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Work from "./Work"
 
 
 
@@ -80,6 +81,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         <img onClick={handleGit} height="50" width="50" alt="Git" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
         </Typography>
         </div>
+        <Work />
         </div>
        
         

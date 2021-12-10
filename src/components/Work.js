@@ -4,6 +4,8 @@ import Button from '@mui/material/Button';
 import '@fontsource/roboto';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import YoutubeEmbed from "./YoutubeEmbed"
+
 
 
 
@@ -55,27 +57,26 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
             }
         }
       });
+
+
     return (
         
         <div className="work_container">
          <div className="grid_container">
-        <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h3">
-             Blogs!
-        </Typography>
-        </ThemeProvider>
+        
         <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h3">
         Projects!
         </Typography>
         </ThemeProvider>
-     
-     {/* <div className="grid_container"> */}
-        <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
-        The map() function is quintessential when working with JavaScript or other frameworks. I aim to explain the basics of how this function works with the help of Spongebob and his friends. 
-           <br /> <Button onClick={handleMap}  target="_blank" variant="contained" color="primary">
-        Read More
+        <YoutubeEmbed embedId="yWXmHS7d8IM" />
+        <div className="description">
+            <h3>Monster Code</h3>
+        “Monster Code” is an app built with React and Ruby. Structured in a similar fashion to an arcade game,  a user must answer code related questions in order to fight and collect all the monsters. The following videos will give a detailed overview of the project and subsequently how and why it was coded the way it was. 
+        </div>
+           <br /> <Button onClick={handleMonster}  target="_blank" variant="contained" color="primary">
+        Watch More
         </Button>
         </Typography>
         <Typography className="grid_item" variant="h4">
@@ -84,6 +85,38 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         Demo
         </Button>
         </Typography>
+        <ThemeProvider theme={theme}>
+        <Typography className="grid_item" variant="h4">
+        Using vanilla JavaScript, “Lost Languages” was created. A random picture is generated from an external API and a user is then prompted to try and write a sentence about the picture using their target language and their first language. One can choose a variety of languages to practice as well as add translations to an existing picture.           <br /> <Button onClick={handleLang}  target="_blank" variant="contained" color="primary">
+        Demo
+        </Button>
+        </Typography>
+        </ThemeProvider>
+        <ThemeProvider theme={theme}>
+        <Typography className="grid_item" variant="h3">
+             Blogs!  
+        </Typography>
+        </ThemeProvider>
+        <ThemeProvider theme={theme}>
+        <Typography className="grid_item" variant="h4">
+
+        Knowing how to effectively use props in React is key to understanding the functionality of the framework. This blog aims to teach how props work and how information can be passed back up to parent components. Told in the form of a fairy tale. 
+           <br /> <Button onClick={handleProps}  target="_blank" variant="contained" color="primary">
+
+        Read More
+        </Button>
+        </Typography>
+        </ThemeProvider>
+     {/* <div className="grid_container"> */}
+        <ThemeProvider theme={theme}>
+        <Typography className="grid_item" variant="h4">
+
+        The map() function is quintessential when working with JavaScript or other frameworks. I aim to explain the basics of how this function works with the help of Spongebob and his friends. 
+           <br /> <Button onClick={handleMap}  target="_blank" variant="contained" color="primary">
+        Read More
+        </Button>
+        </Typography>
+        
         </ThemeProvider>
      {/* </div> */}
      {/* <div className="grid_container"> */}
@@ -94,30 +127,13 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
         Read More
         </Button>
         </Typography>
-        <Typography className="grid_item" variant="h4">
-        “Monster Code” is an app built with React and Ruby. Structured in a similar fashion to an arcade game,  a user must answer code related questions in order to fight and collect all the monsters. The following videos will give a detailed overview of the project and subsequently how and why it was coded the way it was. 
-           <br /> <Button onClick={handleMonster}  target="_blank" variant="contained" color="primary">
-        Watch
-        </Button>
-        </Typography>
+        
         </ThemeProvider>
      {/* </div> */}
      {/* <div className="grid_container"> */}
-        <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h4">
-        Knowing how to effectively use props in React is key to understanding the functionality of the framework. This blog aims to teach how props work and how information can be passed back up to parent components. Told in the form of a fairy tale. 
-           <br /> <Button onClick={handleProps}  target="_blank" variant="contained" color="primary">
-        Read More
-        </Button>
-        </Typography>
-        </ThemeProvider>
-        <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h4">
-        Using vanilla JavaScript, “Lost Languages” was created. A random picture is generated from an external API and a user is then prompted to try and write a sentence about the picture using their target language and their first language. One can choose a variety of languages to practice as well as add translations to an existing picture.           <br /> <Button onClick={handleLang}  target="_blank" variant="contained" color="primary">
-        Demo
-        </Button>
-        </Typography>
-        </ThemeProvider>
+      
+       
+
         
      {/* </div> */}
      </div>
