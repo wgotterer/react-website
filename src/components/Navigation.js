@@ -4,7 +4,6 @@ import Button from '@mui/material/Button'
 import ButtonGroup from '@mui/material/ButtonGroup'
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
-import WorkIcon from '@material-ui/icons/Work';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function Navigation(){

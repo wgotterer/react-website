@@ -108,7 +108,7 @@ import tables from "../pics/tables.png"
         </Typography>
         </ThemeProvider>
         <Typography className="grid_item" variant="h4">
-             <img src={lost} height="500px" width="600px"/>
+             <img alt="pic" src={lost} height="500px" width="600px"/>
         </Typography>
         
 
@@ -123,7 +123,7 @@ import tables from "../pics/tables.png"
         </Typography>
         </ThemeProvider>
         <Typography className="grid_item" variant="h4">
-        <img src={propspic} height="500px" width="600px"/>
+        <img alt="pic" src={propspic} height="500px" width="600px"/>
        </Typography>
 
        <ThemeProvider theme={theme}>
@@ -136,7 +136,7 @@ import tables from "../pics/tables.png"
         </Typography>
         </ThemeProvider>
         <Typography className="grid_item" variant="h4">
-        <img src={tables} height="500px" width="600px"/>
+        <img alt="pic" src={tables} height="500px" width="600px"/>
        </Typography>
 
 
@@ -150,7 +150,7 @@ import tables from "../pics/tables.png"
         </Typography>
         </ThemeProvider>
         <Typography className="grid_item" variant="h4">
-        <img src={blog} height="500px" width="600px"/>
+        <img alt="pic" src={blog} height="500px" width="600px"/>
        </Typography>
 
         
