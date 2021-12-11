@@ -32,9 +32,9 @@ function Navigation(){
         <Button  startIcon={<FaceIcon/>}>
         <NavLink to='/about'>About </NavLink> 
         </Button>
-        <Button  startIcon={<WorkIcon/>}>
+        {/* <Button  startIcon={<WorkIcon/>}>
         <NavLink to='/work'>Work </NavLink>
-        </Button>
+        </Button> */}
         </ButtonGroup>
         </ThemeProvider>
     </div>

@@ -1,11 +1,11 @@
 body {
-  background: linear-gradient(
-0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
-  height: 100%;
-  width: 100%;
-  background-size: cover;
+  margin: 0;
+background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
+  /* height: 100%;
+  width: 100%; */
+  /* background-size: cover; */
   /* background-repeat: no-repeat; */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 /* .home_container{
@@ -16,7 +16,7 @@ body {
 .home_text_container{
   /* position: absolute; */
  text-align: center;
- padding-top: 200px;
+ padding-top: 40px;
  /* padding-left: 20px; */
 }
 
@@ -69,6 +69,8 @@ body {
 .grid_container h4{
   border-bottom: 1px solid black;
   padding-bottom: 10px;
+  word-spacing: 3px;
+  line-height: 1.6
 }
 
 .grid-item {
@@ -78,12 +80,13 @@ body {
 }
 
 .work_container{
-  background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
-  position: absolute;
+  /* background: no-repeat linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1); */
+  /* position: absolute;
   height: 100%;
   width: 100%;
   text-align: center;
   padding-top: 100px;
+  background-size: 100vw 100vh */
 }
 
 /* .video-responsive {
