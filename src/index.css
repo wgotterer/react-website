@@ -1,11 +1,11 @@
 body {
   margin: 0;
 background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
-  /* height: 100%;
-  width: 100%; */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
 }
 
 /* .home_container{
@@ -73,10 +73,14 @@ background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
   line-height: 1.6
 }
 
-.grid-item {
+.grid_item {
   padding: 10px;
   font-size: 30px;
   
+}
+
+.grid_button{
+  padding: 1px;
 }
 
 .work_container{
@@ -107,4 +111,5 @@ background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
 .description{
   padding-top: 20px;
 }
+
 

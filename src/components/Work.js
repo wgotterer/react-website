@@ -38,6 +38,14 @@ import tables from "../pics/tables.png"
         window.open('https://lost-language-app.netlify.app/')
     }
 
+    function handleDemoSwole(){
+        window.open('https://getting-swole-app.herokuapp.com/')
+    }
+
+    function handleSwoleWalkthrough(){
+        window.open('https://dev.to/wgotterer/get-swole-the-reactrails-workout-app-112b')
+    }
+
     // function handleBlog(){
     //     window.open('https://dev.to/wgotterer')
     // }
@@ -70,12 +78,36 @@ import tables from "../pics/tables.png"
         
         
         {/* Below is an example of how I want the layout to be with side by side video and description */}
+
+         
         <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
-            <h3>Monster Code React/Ruby Application</h3>
+            <h3>Get Swole React/Rails Application</h3>
+        "Get Swole" is a workout app that I made along with my two friends. We used a React front end and a Rails back end. You can demo this app as well as checkout the video walkthroughs below!
+                
+                
+        <div className="grid_button">
+        <br /> <Button onClick={handleDemoSwole}  target="_blank" variant="contained" color="primary">
+        Demo
+        </Button>
+        </div>
+        <br /> <Button onClick={handleSwoleWalkthrough}  target="_blank" variant="contained" color="primary">
+        Video Walkthrough
+        </Button>
+        
+        </Typography>
+        </ThemeProvider>
+        <Typography className="grid_item" variant="h4">  
+        <YoutubeEmbed embedId="GZfXz4jRI9s" />  
+        </Typography>
+
+        
+        <ThemeProvider theme={theme}>
+        <Typography className="grid_item" variant="h4">
+            <h3> Monster Code React/Ruby Application</h3>
         “Monster Code” is an app built with React and Ruby. Structured in a similar fashion to an arcade game,  a user must answer code related questions in order to fight and collect all the monsters. The following videos will give a detailed overview of the project and subsequently how and why it was coded the way it was. 
         <br /> <Button onClick={handleMonster}  target="_blank" variant="contained" color="primary">
-        Watch More
+        Video Walkthrough
         </Button>
         </Typography>
         </ThemeProvider>
