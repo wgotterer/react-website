@@ -112,9 +112,29 @@ background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
   padding-top: 20px;
 }
 
+@media all and (min-width: 375px) 
+and (max-device-width: 667px){
+
+  .grid_container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+      
+  }
+
+  .grid_item {
+    padding-left: 260px;
+    font-size: 12px;
+    width: 100%;  
+    box-sizing: border-box;
+    
+  }
+
+}
 
 
-   @media only screen 
+
+   /* @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
@@ -129,5 +149,5 @@ background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
         padding-right: 50px;
         
     }
-}
+} */
 
