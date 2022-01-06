@@ -20,8 +20,17 @@ import tables from "../pics/tables.png"
         window.open('https://dev.to/wgotterer/monster-code-an-application-made-with-react-ruby-and-active-record-3ka3')
     }
 
+    function handleMonsterCode(){
+        window.open('https://github.com/wgotterer/monster-code-app')
+    }
+
+
     function handleSpice(){
         window.open('https://spice-it-up.netlify.app/')
+    }
+
+    function handleSpiceCode(){
+        window.open('https://github.com/wgotterer/recipe-app')
     }
 
     function handleTable(){
@@ -38,13 +47,31 @@ import tables from "../pics/tables.png"
         window.open('https://lost-language-app.netlify.app/')
     }
 
+    function handleLangCode(){
+        window.open('https://github.com/wgotterer/lost-language-app')
+    }
+
     function handleDemoSwole(){
         window.open('https://getting-swole-app.herokuapp.com/')
+    }
+
+    function handleCodeSwole(){
+        window.open('https://github.com/wgotterer/get-swole/')
     }
 
     function handleSwoleWalkthrough(){
         window.open('https://dev.to/wgotterer/get-swole-the-reactrails-workout-app-112b')
     }
+
+    function handleDemoPiano(){
+        window.open('https://piano-with-william.herokuapp.com/')
+    }
+
+    function handlePianoCode(){
+        window.open('https://github.com/wgotterer/final-project')
+    }
+
+
 
     // function handleBlog(){
     //     window.open('https://dev.to/wgotterer')
@@ -82,6 +109,27 @@ import tables from "../pics/tables.png"
          
         <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
+            <h3>Piano with William React/Rails/PostgreSQL Application</h3>
+            At Piano with William you are able to purchase premium follow along classes and practice your scales on a virtual piano! And to really hone in your skills, sign up for a one on one session with the man himself, William!                
+                
+        <div className="grid_button">
+        <br /> <Button onClick={handleDemoPiano}  target="_blank" variant="contained" color="primary">
+        Demo
+        </Button>
+        </div>
+        <br /> <Button onClick={handlePianoCode}  target="_blank" variant="contained" color="primary">
+        GitHub repository
+        </Button>
+        
+        </Typography>
+        </ThemeProvider>
+        <Typography className="grid_item" variant="h4">  
+        <YoutubeEmbed embedId="lEkoSBJE8Cw" />  
+        </Typography>
+
+
+        <ThemeProvider theme={theme}>
+        <Typography className="grid_item" variant="h4">
             <h3>Get Swole React/Rails Application</h3>
         "Get Swole" is a workout app that I made along with my two friends. We used a React front end and a Rails back end. You can demo this app as well as checkout the video walkthroughs below!
                 
@@ -94,6 +142,12 @@ import tables from "../pics/tables.png"
         <br /> <Button onClick={handleSwoleWalkthrough}  target="_blank" variant="contained" color="primary">
         Video Walkthrough
         </Button>
+        <div className="grid_button">
+        <br /> <Button onClick={handleCodeSwole}  target="_blank" variant="contained" color="primary">
+        GitHub repository
+        </Button>
+        </div>
+        
         
         </Typography>
         </ThemeProvider>
@@ -106,9 +160,16 @@ import tables from "../pics/tables.png"
         <Typography className="grid_item" variant="h4">
             <h3> Monster Code React/Ruby Application</h3>
         “Monster Code” is an app built with React and Ruby. Structured in a similar fashion to an arcade game,  a user must answer code related questions in order to fight and collect all the monsters. The following videos will give a detailed overview of the project and subsequently how and why it was coded the way it was. 
+        <div className="grid_button">
         <br /> <Button onClick={handleMonster}  target="_blank" variant="contained" color="primary">
         Video Walkthrough
         </Button>
+        </div>
+        <div className="grid_button">
+        <br /> <Button onClick={handleMonsterCode}  target="_blank" variant="contained" color="primary">
+        GitHub repository
+        </Button>
+        </div>
         </Typography>
         </ThemeProvider>
         <Typography className="grid_item" variant="h4">  
@@ -120,9 +181,15 @@ import tables from "../pics/tables.png"
         <Typography className="grid_item" variant="h4">
             <h3>Spice It Up React Application</h3>
         “Spice It Up!” is an application made with React. A user randomly receives a recipe from an API and can check out various features that pertain to that recipe. Sometimes it’s hard to choose your next meal. “Spice It Up!” does it for you.
+
         <br /> <Button onClick={handleSpice}  target="_blank" variant="contained" color="primary">
         Demo
         </Button>
+        <div className="grid_button">
+        <br /> <Button onClick={handleSpiceCode}  target="_blank" variant="contained" color="primary">
+        GitHub repository
+        </Button>
+        </div>
         </Typography>
         </ThemeProvider>
         <Typography className="grid_item" variant="h4">
@@ -137,6 +204,11 @@ import tables from "../pics/tables.png"
          <br /> <Button onClick={handleLang}  target="_blank" variant="contained" color="primary">
         Demo
         </Button>
+        <div className="grid_button">
+        <br /> <Button onClick={handleLangCode}  target="_blank" variant="contained" color="primary">
+        GitHub repository
+        </Button>
+        </div>
         </Typography>
         </ThemeProvider>
         <Typography className="grid_item" variant="h4">

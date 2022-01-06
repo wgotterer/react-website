@@ -61,7 +61,7 @@ import Work from "./Work"
         Software Engineer. Teacher. Musician.
         </Typography>
         <Typography variant="h4">
-        Full Stack Software Engineer with a passion for creating to make the world a better place.
+        Full Stack Software Engineer with a passion for innovation and creating a better world.
         </Typography>
         <Button onClick={handleLearnMore}  variant="contained" color="primary">
         Learn More

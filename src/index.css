@@ -113,3 +113,21 @@ background: linear-gradient(0.2turn, #A0A7EA, #F8F9FF, #E6F4F1);
 }
 
 
+
+   @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .grid_container{
+      display: grid;
+      grid-template-columns: repeat( auto);
+      grid-template-rows: repeat( auto);
+      grid-gap: 80px;
+      justify-content: center;
+      padding-left: 50px;
+        padding-right: 50px;
+        
+    }
+}
+
