@@ -9,6 +9,7 @@ import lost from "../pics/lost.png"
 import propspic from "../pics/propspic.png"
 import blog from "../pics/blog.png"
 import tables from "../pics/tables.png"
+import Project from './Project';
 
 
 
@@ -71,6 +72,19 @@ import tables from "../pics/tables.png"
         window.open('https://github.com/wgotterer/final-project')
     }
 
+    function handleGuessDemo(){
+        window.open('https://github.com/wgotterer/react-native-number-guessing')
+    }
+
+    function handleGuessWalkthrough(){
+        window.open('https://dev.to/wgotterer/react-native-cookie-guessing-game-5130')
+    }
+
+    function handleGuessRepo(){
+        window.open('https://github.com/wgotterer/react-native-number-guessing')
+    }
+  
+
 
 
     // function handleBlog(){
@@ -106,6 +120,15 @@ import tables from "../pics/tables.png"
         
         {/* Below is an example of how I want the layout to be with side by side video and description */}
 
+        <Project 
+        title={"How Many Cookies In The Cookie Jar? React Native app"}
+        description={"A user can choose how many cookies to put in the jar and the computer must guess. The user gives hints as to whether the computer needs to guess higher or lower"}
+        handleDemo={handleGuessDemo}
+        handleCode={handleGuessRepo}
+        handleWalkthrough={handleGuessWalkthrough}
+        youtube={"GXsFTVds43A"}
+         />
+       
          
         <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
@@ -128,12 +151,11 @@ import tables from "../pics/tables.png"
         </Typography>
 
 
+
         <ThemeProvider theme={theme}>
         <Typography className="grid_item" variant="h4">
             <h3>Get Swole React/Rails Application</h3>
-        "Get Swole" is a workout app that I made along with my two friends. We used a React front end and a Rails back end. You can demo this app as well as checkout the video walkthroughs below!
-                
-                
+        "Get Swole" is a workout app that I made along with my two friends. We used a React front end and a Rails back end. You can demo this app as well as checkout the video walkthroughs below!     
         <div className="grid_button">
         <br /> <Button onClick={handleDemoSwole}  target="_blank" variant="contained" color="primary">
         Demo
