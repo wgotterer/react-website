@@ -72,6 +72,10 @@ import Project from './Project';
         window.open('https://github.com/wgotterer/final-project')
     }
 
+    function handlePianoWalkthrough(){
+        window.open('https://www.youtube.com/watch?v=lEkoSBJE8Cw')
+    }
+
     function handleGuessDemo(){
         window.open('https://github.com/wgotterer/react-native-number-guessing')
     }
@@ -128,27 +132,18 @@ import Project from './Project';
         handleWalkthrough={handleGuessWalkthrough}
         youtube={"GXsFTVds43A"}
          />
+
+        <Project 
+        title={"Piano with William React/Rails/PostgreSQL Application"}
+        description={"At Piano with William you are able to purchase premium follow along classes and practice your scales on a virtual piano! And to really hone in your skills, sign up for a one on one session with the man himself, William!"}
+        handleDemo={handleDemoPiano}
+        handleCode={handlePianoCode}
+        handleWalkthrough={handlePianoWalkthrough}
+        youtube={"lEkoSBJE8Cw"}
+         />
        
          
-        <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h4">
-            <h3>Piano with William React/Rails/PostgreSQL Application</h3>
-            At Piano with William you are able to purchase premium follow along classes and practice your scales on a virtual piano! And to really hone in your skills, sign up for a one on one session with the man himself, William!                
-                
-        <div className="grid_button">
-        <br /> <Button onClick={handleDemoPiano}  target="_blank" variant="contained" color="primary">
-        Demo
-        </Button>
-        </div>
-        <br /> <Button onClick={handlePianoCode}  target="_blank" variant="contained" color="primary">
-        GitHub repository
-        </Button>
         
-        </Typography>
-        </ThemeProvider>
-        <Typography className="grid_item" variant="h4">  
-        <YoutubeEmbed embedId="lEkoSBJE8Cw" />  
-        </Typography>
 
 
 
