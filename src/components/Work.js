@@ -87,6 +87,18 @@ import Project from './Project';
     function handleGuessRepo(){
         window.open('https://github.com/wgotterer/react-native-number-guessing')
     }
+
+    function handleMagicDemo(){
+        window.open('https://github.com/wgotterer/react-native-magic-app')
+    }
+
+    function handleMagicWalkthrough(){
+        window.open('https://www.youtube.com/watch?v=IgvoyRcXEbM&t=3s')
+    }
+
+    function handleMagicRepo(){
+        window.open('https://github.com/wgotterer/react-native-magic-app')
+    }
   
 
 
@@ -123,6 +135,15 @@ import Project from './Project';
         
         
         {/* Below is an example of how I want the layout to be with side by side video and description */}
+
+        <Project 
+        title={"Magic The Gathering app (React Native)"}
+        description={"React Native app in which users can search through Magic The Gathering cards, add favorites, and filters. Coded reusable components that are used throughout the app and ready for future additions. Incorporated Redux to manage and update state of components. Strategically used React Native components and API’s such as navigation, Flatlist, Switch, Platform, and more, along with React Hooks, useCallback, useEffect, and useState"}
+        handleDemo={handleMagicDemo}
+        handleCode={handleMagicRepo}
+        handleWalkthrough={handleMagicWalkthrough}
+        youtube={"IgvoyRcXEbM"}
+         />
 
         <Project 
         title={"How Many Cookies In The Cookie Jar? React Native app"}

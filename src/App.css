@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: url("https://www.collinsdictionary.com/images/thumb/dog_230497594_250.jpg?version=4.0.234"), pointer;
 }
 
 .App-logo {
