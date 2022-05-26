@@ -8,11 +8,13 @@ import styled from "styled-components";
 
 function Project(props) {
   return (
+      <>
     <IndividualProjectArea>
       <ProjectInfoArea>
-        <h3>{props.title}</h3>
-        {props.description}
-
+          <TextArea>
+        <Typography variant="h5">{props.title}</Typography>
+        <Typography variant="h6">{props.description}</Typography>
+        </TextArea>
         {props.handleDemo ? (
           <Button
             onClick={props.handleDemo}
@@ -59,15 +61,18 @@ function Project(props) {
       </ProjectInfoArea>
 
       {props.youtube ? (
-        <Typography className="grid_item" variant="h4">
+        
           <YoutubeEmbed embedId={props.youtube} />
-        </Typography>
+      
       ) : (
-        <Typography className="grid_item" variant="h4">
+       
           <img alt="pic" src={props.src} height="500px" width="600px" />
-        </Typography>
+       
       )}
+     
     </IndividualProjectArea>
+     <Divider />
+     </>
   );
 }
 
@@ -83,6 +88,24 @@ const ProjectInfoArea = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+  align-items: center;
+  gap: 20px;
 `;
+
+const TextArea = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 2% 0 2%;
+gap: 20px;
+`
+
+const Divider = styled.div`
+display: flex;
+width: 100%;
+background-color: grey;
+height: 3px;
+margin: 20px;
+`
 
 export default Project;
