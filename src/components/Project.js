@@ -131,6 +131,7 @@ justify-content: space-around;
   and (max-device-width: 897px)
  { 
     gap: 20px;
+    margin-top: 15px;
 
 }
 `
