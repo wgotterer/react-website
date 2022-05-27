@@ -17,6 +17,7 @@ function Project(props) {
         <TextH1 variant="h5">{props.title}</TextH1>
         <Text>{props.description}</Text>
         </TextArea>
+        <ButtonArea>
         {props.handleDemo ? (
           <ButtonPrimary
             onClick={props.handleDemo}
@@ -60,6 +61,7 @@ function Project(props) {
             Read More
           </ButtonPrimary>
         ) : null}
+        </ButtonArea>
       </ProjectInfoArea>
 
       {props.youtube ? (
@@ -131,6 +133,14 @@ flex-direction: column;
 align-items: center;
 margin: 0 2% 0 2%;
 gap: 20px;
+`
+
+const ButtonArea = styled.div`
+display: flex;
+flex-direction: row;
+width: 100%;
+gap: 20px;
+justify-content: center;
 `
 
 const Divider = styled.div`
