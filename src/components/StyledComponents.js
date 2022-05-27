@@ -71,6 +71,7 @@ export const ButtonPrimary = styled.div`
  {
     font-size: 12px;
     padding: 5px;
+    margin-top: 15px;
 }
 `;
 
