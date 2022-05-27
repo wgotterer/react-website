@@ -94,18 +94,6 @@ const IndividualProjectArea = styled.div`
 }
 `;
 
-const Title = styled.div`
-font-size: 36px;
-
-@media only screen 
-  and (min-device-width: 374px) 
-  and (max-device-width: 897px)
- { 
-    font-size: 20px;
-
-}
-`
-
 const ProjectInfoArea = styled.div`
   display: flex;
   flex-direction: column;

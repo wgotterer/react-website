@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Button from "@mui/material/Button";
 import "@fontsource/roboto";
-import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useHistory } from "react-router-dom";
 import websitephoto from "./websitephoto.jpg";
 import styled from "styled-components";
