@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Work from "./Work";
 import styled from "styled-components";
+import {TextH1,  TextH2} from "./StyledComponents"
 
 function Home() {
   let history = useHistory();
@@ -28,14 +29,14 @@ function Home() {
   return (
     <HomeArea>
       <HeaderArea>
-        <div variant="h4">Hi, I'm William.</div>
-        <div variant="h2">
+        <TextH1>Hi, I'm William.</TextH1>
+        < TextH2>
           Software Engineer. Teacher. Musician.
-        </div>
-        <div variant="h4">
+        </ TextH2>
+        < TextH2>
           Full Stack Software Engineer with a passion for innovation and
           creating a better world.
-        </div>
+        </ TextH2>
         <Button onClick={handleLearnMore} variant="contained" color="primary">
           Learn More
         </Button>
@@ -79,6 +80,7 @@ function Home() {
         />
       </Typography>
       </RedirectLinksArea>
+      <Divider/>
       <Work />
     </HomeArea>
   );
@@ -90,6 +92,7 @@ const HomeArea = styled.div`
   width: 100%;
   height: 100%;
   gap: 20px;
+  text-align: center;
 `;
 
 const HeaderArea = styled.div`
@@ -115,6 +118,13 @@ display: flex;
 flex-direction: row;
 width: 100%;
 justify-content: center;
+`
+
+const Divider = styled.div`
+display: flex;
+background-color: grey;
+height: 3px;
+margin: 20px;
 `
 
 export default Home;

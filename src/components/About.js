@@ -41,9 +41,14 @@ function About() {
         the years, I wish to use them to build connections, learn, and create
         for a better future.
       </Text>
-      <ButtonPrimary onClick={handleLearnMore}>
+      <Button
+            onClick={handleLearnMore}
+            target="_blank"
+            variant="contained"
+            color="primary"
+          >
         See My Work
-      </ButtonPrimary>
+      </Button>
       </TextButtonArea>
       <img
         className="about_pic"
