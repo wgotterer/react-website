@@ -125,12 +125,14 @@ display: flex;
 flex-direction: row;
 width: 100%;
 gap: 20px;
-justify-content: space-around;
+justify-content: center;
+
 @media only screen 
   and (min-device-width: 374px) 
   and (max-device-width: 897px)
  { 
     gap: 20px;
+    justify-content: space-around;
 
 }
 `

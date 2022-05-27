@@ -39,7 +39,7 @@ function Home() {
           Full Stack Software Engineer with a passion for innovation and
           creating a better world.
         </ TextH2>
-        <ButtonPrimary onClick={handleLearnMore} variant="contained" color="primary">
+        <ButtonPrimary onClick={handleLearnMore}>
           Learn More
         </ButtonPrimary>
       </HeaderArea>

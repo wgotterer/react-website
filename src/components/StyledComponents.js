@@ -53,6 +53,7 @@ export const TextH2 = styled.div`
 
 export const ButtonPrimary = styled.div`
   border-radius: 10px;
+  font-size: 16px;
   font-family: Poppins;
   font-weight: 400;
   color: black;
