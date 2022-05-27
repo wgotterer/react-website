@@ -1,58 +1,166 @@
-import React from 'react'
-import Button from '@mui/material/Button';
-import '@fontsource/roboto';
-import Typography from '@mui/material/Typography';
-import {createTheme, ThemeProvider } from '@mui/material/styles';
-import YoutubeEmbed from "./YoutubeEmbed"
+import React from "react";
+import Button from "@mui/material/Button";
+import "@fontsource/roboto";
+import Typography from "@mui/material/Typography";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import YoutubeEmbed from "./YoutubeEmbed";
+import styled from "styled-components";
+import { Text, TextH2, TextH1, ButtonPrimary } from "./StyledComponents";
 
 
 function Project(props) {
+  return (
+      <>
+    <IndividualProjectArea>
+      <ProjectInfoArea>
+          <TextArea>
+        <TextH1 variant="h5">{props.title}</TextH1>
+        <Text>{props.description}</Text>
+        </TextArea>
+        <ButtonArea>
+        {props.handleDemo ? (
+          <ButtonPrimary
+            onClick={props.handleDemo}
+            target="_blank"
+            variant="contained"
+            color="primary"
+          >
+            Demo
+          </ButtonPrimary>
+        ) : null}
 
-    const theme = createTheme({
-        typography: {
-            h4: {
-                fontSize: 20,
-                marginBottom: 30,
-            },
-            h2: {
-                
-                marginBottom: 30,
-            }
-        },
-        palette: {
-            primary: {
-              // Purple and green play nicely together.
-              main: '#ebf8e1',
-            }
-        }
-      });
-    return (
-        <>
-            <ThemeProvider theme={theme}>
-        <Typography className="grid_item" variant="h4">
-            <h3>{props.title}</h3>
-            {props.description}                
-        <div className="grid_button">
-        <br /> <Button onClick={props.handleDemo}  target="_blank" variant="contained" color="primary">
-        Demo
-        </Button>
-        </div>
-        <br /> <Button onClick={props.handleCode}  target="_blank" variant="contained" color="primary">
-        GitHub repository
-        </Button>
-        <div className="grid_button">
-        <br /> <Button onClick={props.handleWalkthrough}  target="_blank" variant="contained" color="primary">
-        Video Walkthrough
-        </Button>
-        </div>
+        {props.handleCode ? (
+          <ButtonPrimary
+            onClick={props.handleCode}
+            target="_blank"
+            variant="contained"
+            color="primary"
+          >
+            GitHub repository
+          </ButtonPrimary>
+        ) : null}
 
-        </Typography>
-        </ThemeProvider>
-        <Typography className="grid_item" variant="h4">  
-        <YoutubeEmbed embedId={props.youtube} />  
-        </Typography>
-        </>
-    )
+        {props.handleWalkthrough && (
+          <ButtonPrimary
+            onClick={props.handleWalkthrough}
+            target="_blank"
+            variant="contained"
+            color="primary"
+          >
+            Video Walkthrough
+          </ButtonPrimary>
+        )}
+
+        {props.readMore ? (
+          <ButtonPrimary
+            onClick={props.readMore}
+            target="_blank"
+            variant="contained"
+            color="primary"
+          >
+            Read More
+          </ButtonPrimary>
+        ) : null}
+        </ButtonArea>
+      </ProjectInfoArea>
+
+      {props.youtube ? (
+        
+          <YoutubeEmbed embedId={props.youtube} />
+      
+      ) : (
+       
+          <img alt="pic" src={props.src} height="500px" width="600px" />
+       
+      )}
+     
+    </IndividualProjectArea>
+     <Divider />
+     </>
+  );
 }
 
-export default  Project
+const IndividualProjectArea = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    flex-direction: column;
+
+}
+`;
+
+const Title = styled.div`
+font-size: 36px;
+
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    font-size: 20px;
+
+}
+`
+
+const ProjectInfoArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 20px;
+ 
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    margin-bottom: 20px;
+
+}
+`;
+
+const TextArea = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 2% 0 2%;
+gap: 20px;
+`
+
+const ButtonArea = styled.div`
+display: flex;
+flex-direction: row;
+width: 100%;
+gap: 20px;
+justify-content: center;
+`
+
+const Divider = styled.div`
+display: flex;
+background-color: grey;
+height: 3px;
+margin: 20px;
+`
+
+const MobileTypography = styled.div`
+
+font-size: 20px;
+
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+      display: none;
+
+}
+`
+
+export default Project;

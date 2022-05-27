@@ -1,22 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ReactPlayer from 'react-player/lazy'
+import styled from "styled-components";
+import Spinner from "./Spinner";
+
 
 const YoutubeEmbed = ({ embedId }) => (
-  <div className="video-responsive">
-    <iframe
-      width="600"
-      height="500"
-      src={`https://www.youtube.com/embed/${embedId}`}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Embedded youtube"
+  
+
+    <ReactPlayer
+    url= {`https://www.youtube.com/embed/${embedId}`}
+    controls={true}
+    width={"400px"}
+    height={"400px"}
+    fallback={<Spinner/>}
+   
     />
-  </div>
+
 );
 
 YoutubeEmbed.propTypes = {
   embedId: PropTypes.string.isRequired
 };
+
 
 export default YoutubeEmbed;

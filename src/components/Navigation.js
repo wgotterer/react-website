@@ -5,39 +5,55 @@ import ButtonGroup from '@mui/material/ButtonGroup'
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {TextH1,  TextH2, ButtonNav} from "./StyledComponents"
+
+import styled from "styled-components";
+
 
 function Navigation(){
 
-  const theme = createTheme({
-    palette: {
-      primary: {
-        // Purple and green play nicely together.
-        main: '#ebf8e1',
-      },
-      secondary: {
-        // This is green.A700 as hex.
-        main: '#11cb5f',
-      },
-    },
-  });
+
 
   return (
-    <div className='navigation'>
-      <ThemeProvider theme={theme}>
-        <ButtonGroup variant="contained" color="primary" size="large">
-        <Button  startIcon={<HomeIcon/>}>
+    <NavArea>
+     
+     <ButtonWrapper>
+        <ButtonNav>
+        <HomeIcon/>
+        
         <NavLink to='/'>Home</NavLink>
-        </Button >
-        <Button  startIcon={<FaceIcon/>}>
+        </ButtonNav >
+        </ButtonWrapper>
+        <ButtonWrapper>
+
+        <ButtonNav>
+          <FaceIcon/>
         <NavLink to='/about'>About </NavLink> 
-        </Button>
-        {/* <Button  startIcon={<WorkIcon/>}>
-        <NavLink to='/work'>Work </NavLink>
-        </Button> */}
-        </ButtonGroup>
-        </ThemeProvider>
-    </div>
+        </ButtonNav>
+        </ButtonWrapper>
+
+
+  
+    </NavArea>
   );
 }
+
+const NavArea = styled.div`
+  display: flex;
+
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    justify-content: center;
+
+}
+`;
+
+const ButtonWrapper = styled.div`
+gap: 20px
+`
+
 
 export default Navigation;
