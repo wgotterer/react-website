@@ -111,6 +111,7 @@ const HeaderArea = styled.div`
  { 
     font-size: 20px;
     margin-top: 20px;
+    gap: 20px;
 
 }
 `;

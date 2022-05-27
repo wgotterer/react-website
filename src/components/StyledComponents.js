@@ -69,8 +69,8 @@ export const ButtonPrimary = styled.div`
   and (min-device-width: 374px) 
   and (max-device-width: 897px)
  {
-    font-size: 15px;
-    padding: 10px;
+    font-size: 12px;
+    padding: 5px;
 }
 `;
 
