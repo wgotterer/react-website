@@ -125,7 +125,7 @@ display: flex;
 flex-direction: row;
 width: 100%;
 gap: 20px;
-justify-content: center;
+justify-content: space-around;
 @media only screen 
   and (min-device-width: 374px) 
   and (max-device-width: 897px)
