@@ -1,11 +1,8 @@
 import React from "react";
-import Button from "@mui/material/Button";
 import "@fontsource/roboto";
-import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import YoutubeEmbed from "./YoutubeEmbed";
 import styled from "styled-components";
-import { Text, TextH2, TextH1, ButtonPrimary } from "./StyledComponents";
+import { Text, TextH1, ButtonPrimary } from "./StyledComponents";
 
 
 function Project(props) {
@@ -150,17 +147,5 @@ height: 3px;
 margin: 20px;
 `
 
-const MobileTypography = styled.div`
-
-font-size: 20px;
-
-@media only screen 
-  and (min-device-width: 374px) 
-  and (max-device-width: 897px)
- { 
-      display: none;
-
-}
-`
 
 export default Project;
