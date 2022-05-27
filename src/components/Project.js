@@ -12,7 +12,7 @@ function Project(props) {
     <IndividualProjectArea>
       <ProjectInfoArea>
           <TextArea>
-        <Typography variant="h5">{props.title}</Typography>
+        <Title variant="h5">{props.title}</Title>
         <MobileTypography variant="h6">{props.description}</MobileTypography>
         </TextArea>
         {props.handleDemo ? (
@@ -93,6 +93,18 @@ const IndividualProjectArea = styled.div`
 }
 `;
 
+const Title = styled.div`
+font-size: 36px;
+
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    font-size: 20px;
+
+}
+`
+
 const ProjectInfoArea = styled.div`
   display: flex;
   flex-direction: column;
@@ -126,8 +138,9 @@ height: 3px;
 margin: 20px;
 `
 
-const MobileTypography = styled(Typography)`
+const MobileTypography = styled.div`
 
+font-size: 20px;
 
 @media only screen 
   and (min-device-width: 374px) 

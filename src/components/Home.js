@@ -26,38 +26,6 @@ function Home() {
   }
 
   return (
-    // <div className="home_container">
-    //    <div>
-    //     <ThemeProvider theme={theme}>
-    //     <div className="home_text_container">
-    //     <Typography variant="h4">
-    //         Hi, I'm William.
-    //     </Typography>
-    //     <Typography variant="h2">
-    //     Software Engineer. Teacher. Musician.
-    //     </Typography>
-    //     <Typography variant="h4">
-    //     Full Stack Software Engineer with a passion for innovation and creating a better world.
-    //     </Typography>
-    //     <Button onClick={handleLearnMore}  variant="contained" color="primary">
-    //     Learn More
-    //     </Button>
-    //     <div className="button_container">
-    //     <Typography className="home_button" variant="h2">
-    //     <a class="mailto" href="mailto:william.gotterer@gmail.com">
-    //     <img height="50" width="50" alt="mail" src="https://seeklogo.com/images/G/gmail-icon-logo-9ADB17D3F3-seeklogo.com.png"/>
-    //     </a>
-    //     </Typography>
-    //     <Typography className="home_button" variant="h2">
-    //     <img onClick={handleLinkedin} height="50" width="50" alt="linkedin" src="https://cdn.iconscout.com/icon/free/png-256/linkedin-3691226-3073746.png"/>
-    //     </Typography>
-    //     <Typography className="home_button" variant="h2">
-    //     <img onClick={handleDev} height="50" width="50" alt="Dev" src="https://d2fltix0v2e0sb.cloudfront.net/dev-black.png" />
-    //     </Typography>
-    //     <Typography className="home_button" variant="h2">
-    //     <img onClick={handleGit} height="50" width="50" alt="Git" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
-    //     </Typography>
-    //     </div>
     <HomeArea>
       <HeaderArea>
         <div variant="h4">Hi, I'm William.</div>
@@ -130,6 +98,7 @@ const HeaderArea = styled.div`
   align-items: center;
   width: 100%;
   gap: 20px;
+  font-size: 40px;
   
   @media only screen 
   and (min-device-width: 374px) 

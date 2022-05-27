@@ -9,9 +9,11 @@ const YoutubeEmbed = ({ embedId }) => (
 
     <ReactPlayer
     url= {`https://www.youtube.com/embed/${embedId}`}
-    controls="true"
-    width={"300px"}
+    controls={true}
+    width={"400px"}
     height={"400px"}
+    SameSite={"Lax"}
+   
     />
 
 );
