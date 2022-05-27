@@ -5,6 +5,8 @@ import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import YoutubeEmbed from "./YoutubeEmbed";
 import styled from "styled-components";
+import { Text, TextH2, TextH1, ButtonPrimary } from "./StyledComponents";
+
 
 function Project(props) {
   return (
@@ -12,51 +14,51 @@ function Project(props) {
     <IndividualProjectArea>
       <ProjectInfoArea>
           <TextArea>
-        <Title variant="h5">{props.title}</Title>
-        <MobileTypography variant="h6">{props.description}</MobileTypography>
+        <TextH1 variant="h5">{props.title}</TextH1>
+        <Text>{props.description}</Text>
         </TextArea>
         {props.handleDemo ? (
-          <Button
+          <ButtonPrimary
             onClick={props.handleDemo}
             target="_blank"
             variant="contained"
             color="primary"
           >
             Demo
-          </Button>
+          </ButtonPrimary>
         ) : null}
 
         {props.handleCode ? (
-          <Button
+          <ButtonPrimary
             onClick={props.handleCode}
             target="_blank"
             variant="contained"
             color="primary"
           >
             GitHub repository
-          </Button>
+          </ButtonPrimary>
         ) : null}
 
         {props.handleWalkthrough && (
-          <Button
+          <ButtonPrimary
             onClick={props.handleWalkthrough}
             target="_blank"
             variant="contained"
             color="primary"
           >
             Video Walkthrough
-          </Button>
+          </ButtonPrimary>
         )}
 
         {props.readMore ? (
-          <Button
+          <ButtonPrimary
             onClick={props.readMore}
             target="_blank"
             variant="contained"
             color="primary"
           >
             Read More
-          </Button>
+          </ButtonPrimary>
         ) : null}
       </ProjectInfoArea>
 

@@ -52,13 +52,38 @@ export const TextH2 = styled.div`
 `;
 
 export const ButtonPrimary = styled.div`
-  border-radius: 5px;
-  color: grey;
-  width: 200px;
-  height: 50px;
-  background-color: blue;
+  border-radius: 10px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: black;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background-color: #79DAE8;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+`;
+
+export const ButtonNav = styled.div`
+  font-family: Poppins;
+  font-weight: 400;
+  color: black;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 30px;
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
 `;

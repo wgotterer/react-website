@@ -22,6 +22,10 @@ function About() {
     history.push("/work");
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   //   “A (fill in the blank) for living in (Try another word other than ‘new’ as you used in the sentence before) and (fill in the blank) for learning from and connecting to (‘diverse’ or something like that) or other adj) communities
 
   return aboutPhoto ? (
@@ -41,14 +45,14 @@ function About() {
         the years, I wish to use them to build connections, learn, and create
         for a better future.
       </Text>
-      <Button
+      <ButtonPrimary
             onClick={handleLearnMore}
             target="_blank"
             variant="contained"
             color="primary"
           >
         See My Work
-      </Button>
+      </ButtonPrimary>
       </TextButtonArea>
       <img
         className="about_pic"
@@ -73,11 +77,8 @@ gap: 15px;
 @media only screen 
   and (min-device-width: 374px) 
   and (max-device-width: 897px)
- { 
-
+ {
     align-items: center;
-   
-
 }
 `
 

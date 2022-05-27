@@ -5,6 +5,8 @@ import ButtonGroup from '@mui/material/ButtonGroup'
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {TextH1,  TextH2, ButtonNav} from "./StyledComponents"
+
 import styled from "styled-components";
 
 
@@ -15,16 +17,22 @@ function Navigation(){
   return (
     <NavArea>
      
-        <Button  startIcon={<HomeIcon/>}>
+     <ButtonWrapper>
+        <ButtonNav>
+        <HomeIcon/>
+        
         <NavLink to='/'>Home</NavLink>
-        </Button >
-        <Button  startIcon={<FaceIcon/>}>
+        </ButtonNav >
+        </ButtonWrapper>
+        <ButtonWrapper>
+
+        <ButtonNav>
+          <FaceIcon/>
         <NavLink to='/about'>About </NavLink> 
-        </Button>
-        {/* <Button  startIcon={<WorkIcon/>}>
-        <NavLink to='/work'>Work </NavLink>
-        </Button> */}
-   
+        </ButtonNav>
+        </ButtonWrapper>
+
+
   
     </NavArea>
   );
@@ -42,6 +50,10 @@ const NavArea = styled.div`
 
 }
 `;
+
+const ButtonWrapper = styled.div`
+gap: 20px
+`
 
 
 export default Navigation;

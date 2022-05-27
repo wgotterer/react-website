@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useHistory } from "react-router-dom";
 import Button from "@mui/material/Button";
 import "@fontsource/roboto";
@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Work from "./Work";
 import styled from "styled-components";
-import {TextH1,  TextH2} from "./StyledComponents"
+import {TextH1,  TextH2, ButtonPrimary} from "./StyledComponents"
 
 function Home() {
   let history = useHistory();
@@ -26,6 +26,10 @@ function Home() {
     window.open("https://github.com/wgotterer");
   }
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <HomeArea>
       <HeaderArea>
@@ -37,9 +41,9 @@ function Home() {
           Full Stack Software Engineer with a passion for innovation and
           creating a better world.
         </ TextH2>
-        <Button onClick={handleLearnMore} variant="contained" color="primary">
+        <ButtonPrimary onClick={handleLearnMore} variant="contained" color="primary">
           Learn More
-        </Button>
+        </ButtonPrimary>
       </HeaderArea>
       <RedirectLinksArea>
       <Typography className="home_button" variant="h2">

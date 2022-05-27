@@ -109,27 +109,6 @@ function Work() {
     window.open("https://github.com/wgotterer/react-native-magic-app");
   }
 
-  // function handleBlog(){
-  //     window.open('https://dev.to/wgotterer')
-  // }
-
-  const theme = createTheme({
-    typography: {
-      h4: {
-        fontSize: 20,
-        marginBottom: 30,
-      },
-      h2: {
-        marginBottom: 30,
-      },
-    },
-    palette: {
-      primary: {
-        // Purple and green play nicely together.
-        main: "#ebf8e1",
-      },
-    },
-  });
 
   return (
     <ProjectArea>
@@ -240,6 +219,7 @@ const ProjectArea = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+  margin-top: 20px;
 `;
 
 export default Work;

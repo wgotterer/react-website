@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import ReactPlayer from 'react-player/youtube'
+import ReactPlayer from 'react-player/lazy'
 import styled from "styled-components";
+import Spinner from "./Spinner";
 
 
 const YoutubeEmbed = ({ embedId }) => (
@@ -12,7 +13,7 @@ const YoutubeEmbed = ({ embedId }) => (
     controls={true}
     width={"400px"}
     height={"400px"}
-    SameSite={"Lax"}
+    fallback={<Spinner/>}
    
     />
 
@@ -22,15 +23,5 @@ YoutubeEmbed.propTypes = {
   embedId: PropTypes.string.isRequired
 };
 
-// const ReactPlayerMobile = styled(ReactPlayer)`
-
-// @media only screen 
-//   and (min-device-width: 374px) 
-//   and (max-device-width: 897px)
-//  { 
-//       height: 23px;
-
-// }
-// `
 
 export default YoutubeEmbed;
