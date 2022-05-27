@@ -14,7 +14,7 @@ function Home() {
   }
 
   function handleLinkedin() {
-    window.open("https://www.linkedin.com/in/william-gotterer-a8581988/");
+    window.open("https://www.linkedin.com/in/william-gotterer/");
   }
   function handleDev() {
     window.open("https://dev.to/wgotterer");
