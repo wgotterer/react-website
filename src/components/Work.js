@@ -1,10 +1,5 @@
 import React from "react";
-// import { useHistory } from "react-router-dom";
-import Button from "@mui/material/Button";
 import "@fontsource/roboto";
-import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-import YoutubeEmbed from "./YoutubeEmbed";
 import lost from "../pics/lost.png";
 import propspic from "../pics/propspic.png";
 import blog from "../pics/blog.png";
@@ -13,7 +8,6 @@ import Project from "./Project";
 import styled from "styled-components";
 
 function Work() {
-  // let history = useHistory();
 
   function handleMonster() {
     window.open(

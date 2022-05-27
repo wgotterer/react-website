@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ReactPlayer from 'react-player/lazy'
-import styled from "styled-components";
 import Spinner from "./Spinner";
 
 
