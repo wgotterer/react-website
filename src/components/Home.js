@@ -60,14 +60,14 @@ function Home() {
     //     </div>
     <HomeArea>
       <HeaderArea>
-        <Typography variant="h4">Hi, I'm William.</Typography>
-        <Typography variant="h2">
+        <div variant="h4">Hi, I'm William.</div>
+        <div variant="h2">
           Software Engineer. Teacher. Musician.
-        </Typography>
-        <Typography variant="h4">
+        </div>
+        <div variant="h4">
           Full Stack Software Engineer with a passion for innovation and
           creating a better world.
-        </Typography>
+        </div>
         <Button onClick={handleLearnMore} variant="contained" color="primary">
           Learn More
         </Button>
@@ -129,6 +129,16 @@ const HeaderArea = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 20px;
+  
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    font-size: 20px;
+    margin-top: 20px;
+
+}
 `;
 
 const RedirectLinksArea = styled.div`

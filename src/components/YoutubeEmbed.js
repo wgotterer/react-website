@@ -1,22 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ReactPlayer from 'react-player/youtube'
+import styled from "styled-components";
+
 
 const YoutubeEmbed = ({ embedId }) => (
-  <div className="video-responsive">
-    <iframe
-      width="100%"
-      height="100%"
-      src={`https://www.youtube.com/embed/${embedId}`}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-      title="Embedded youtube"
+  
+
+    <ReactPlayer
+    url= {`https://www.youtube.com/embed/${embedId}`}
+    controls="true"
+    width={"300px"}
+    height={"400px"}
     />
-  </div>
+
 );
 
 YoutubeEmbed.propTypes = {
   embedId: PropTypes.string.isRequired
 };
+
+// const ReactPlayerMobile = styled(ReactPlayer)`
+
+// @media only screen 
+//   and (min-device-width: 374px) 
+//   and (max-device-width: 897px)
+//  { 
+//       height: 23px;
+
+// }
+// `
 
 export default YoutubeEmbed;

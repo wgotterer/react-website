@@ -13,7 +13,7 @@ function Project(props) {
       <ProjectInfoArea>
           <TextArea>
         <Typography variant="h5">{props.title}</Typography>
-        <Typography variant="h6">{props.description}</Typography>
+        <MobileTypography variant="h6">{props.description}</MobileTypography>
         </TextArea>
         {props.handleDemo ? (
           <Button
@@ -79,8 +79,18 @@ function Project(props) {
 const IndividualProjectArea = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
   height: 100%;
+
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    flex-direction: column;
+
+}
 `;
 
 const ProjectInfoArea = styled.div`
@@ -90,6 +100,15 @@ const ProjectInfoArea = styled.div`
   height: 100%;
   align-items: center;
   gap: 20px;
+ 
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    margin-bottom: 20px;
+
+}
 `;
 
 const TextArea = styled.div`
@@ -102,10 +121,21 @@ gap: 20px;
 
 const Divider = styled.div`
 display: flex;
-width: 100%;
 background-color: grey;
 height: 3px;
 margin: 20px;
+`
+
+const MobileTypography = styled(Typography)`
+
+
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+      display: none;
+
+}
 `
 
 export default Project;
