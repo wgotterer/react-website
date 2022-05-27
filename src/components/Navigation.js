@@ -1,11 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Button from '@mui/material/Button'
-import ButtonGroup from '@mui/material/ButtonGroup'
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {TextH1,  TextH2, ButtonNav} from "./StyledComponents"
+import {ButtonNav} from "./StyledComponents"
 
 import styled from "styled-components";
 

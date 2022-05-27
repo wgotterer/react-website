@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Button from "@mui/material/Button";
 import "@fontsource/roboto";
-import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useHistory } from "react-router-dom";
 import websitephoto from "./websitephoto.jpg";
 import styled from "styled-components";
@@ -26,7 +23,6 @@ function About() {
     window.scrollTo(0, 0)
   }, [])
 
-  //   “A (fill in the blank) for living in (Try another word other than ‘new’ as you used in the sentence before) and (fill in the blank) for learning from and connecting to (‘diverse’ or something like that) or other adj) communities
 
   return aboutPhoto ? (
     <AboutArea>

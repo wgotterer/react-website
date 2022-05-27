@@ -1,9 +1,7 @@
 import React, {useEffect} from "react";
 import { useHistory } from "react-router-dom";
-import Button from "@mui/material/Button";
 import "@fontsource/roboto";
 import Typography from "@mui/material/Typography";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Work from "./Work";
 import styled from "styled-components";
 import {TextH1,  TextH2, ButtonPrimary} from "./StyledComponents"
