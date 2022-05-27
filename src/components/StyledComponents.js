@@ -64,6 +64,14 @@ export const ButtonPrimary = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  @media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ {
+    font-size: 15px;
+    padding: 10px;
+}
 `;
 
 export const ButtonNav = styled.div`
