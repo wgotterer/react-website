@@ -30,6 +30,7 @@ export const TextH1 = styled.div`
  { 
     font-size: 20px;
   line-height: 1.3em;
+  margin: 10px;
 
 }
 `;
@@ -47,6 +48,7 @@ export const TextH2 = styled.div`
  { 
     font-size: 20px;
   line-height: 1.3em;
+  margin: 10px;
 
 }
 `;

@@ -142,6 +142,14 @@ display: flex;
 background-color: grey;
 height: 3px;
 margin: 20px;
+
+@media only screen 
+  and (min-device-width: 374px) 
+  and (max-device-width: 897px)
+ { 
+    
+    margin: 10px;
+}
 `
 
 
