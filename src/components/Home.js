@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Work from "./Work";
 import styled from "styled-components";
 import {TextH1,  TextH2, ButtonPrimary} from "./StyledComponents"
+import ReactPlayer from "react-player";
 
 function Home() {
   let history = useHistory();
@@ -39,7 +40,9 @@ function Home() {
           Full Stack Software Engineer with a passion for innovation and
           creating a better world.
         </ TextH2>
-        <ButtonPrimary onClick={handleLearnMore}>
+        <TextH2>Currently attempting to break the world record of most pull-ups while hula hooping.</TextH2>
+        <ReactPlayer url={"https://youtube.com/shorts/AjgzIUpSIcU?feature=share"} controls />
+              <ButtonPrimary onClick={handleLearnMore}>
           Learn More
         </ButtonPrimary>
       </HeaderArea>
