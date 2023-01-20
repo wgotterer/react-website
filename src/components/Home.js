@@ -9,6 +9,7 @@ import ReactPlayer from "react-player";
 
 function Home() {
   let history = useHistory();
+  console.log("Home.js")
 
   function handleLearnMore() {
     history.push("/about");
@@ -34,13 +35,9 @@ function Home() {
       <HeaderArea>
         <TextH1>Hi, I'm William.</TextH1>
         < TextH2>
-          Software Engineer. Teacher. Musician.
+          Full Stack Software Engineer. Teacher. Musician.
         </ TextH2>
-        < TextH2>
-          Full Stack Software Engineer with a passion for innovation and
-          creating a better world.
-        </ TextH2>
-        <TextH2>Currently attempting to break the world record of most pull-ups while hula hooping.</TextH2>
+        <TextH2>Currently attempting to break the world record for most pull-ups while hula hooping.</TextH2>
         <ReactPlayer url={"https://youtube.com/shorts/AjgzIUpSIcU?feature=share"} controls />
               <ButtonPrimary onClick={handleLearnMore}>
           Learn More
